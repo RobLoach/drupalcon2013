@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Composer: There's a Module (or Library) for That</title>
+    <link rel="stylesheet" href="components/require.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-state="soothe">
+          <h1>Composer</h1>
+          <h3>There's a Module (or Library) for that!</h3>
+          <p>
+            <small>Presented by <a href="http://robloach.net">Rob Loach</a>, <a href="http://www.garfieldtech.com/">Larry Garfield</a> and <a href="http://twitter.com/sdboyer">Sam Boyer</a></small>
+          </p>
+        </section>
+        <section>
+          <h2>Package Management</h2>
+          <ul>
+            <li>Double U, Tee, Eff?</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Composer</h2>
+          <ul>
+            <li>Some history</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Ideologies</h2>
+          <ul>
+            <li>Some history</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Central Repository</h2>
+          <ul>
+            <li><a href="http://packagist.org">Packagist.org</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Basics</h2>
+          <ul>
+            <li>composer.json</li>
+            <li>composer.lock</li>
+            <li>composer install</li>
+            <li>composer update</li>
+          </ul>
+        </section>
+        <section class="json">
+          <h2>Schema</h2>
+          <pre><code contenteditable>{
+    "name": "dries/mypackage",
+    "description": "This package provides some awesomeness.",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/symfony": "2.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MyName\\MyPackage": "src/"
+        }
+    }
+}</code></pre>
+          <a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a>
+        </section>
+        <section>
+          <section data-state="soothe">
+            <h1>Libraries</h1>
+            <p>
+              Some of the libraries available via Composer include...
+            </p>
+            <a href="#" class="image navigate-down">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>Symfony</h2>
+            <a href="#" class="image navigate-down">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>PHPUnit</h2>
+            <a href="#" class="image navigate-down">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>Guzzle</h2>
+            <a href="#" class="image navigate-down">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>Solarium</h2>
+            <a href="#" class="image navigate-down">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>Elastica</h2>
+            <a href="#" class="image navigate-down">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>Monolog</h2>
+            <a href="#" class="image navigate-next">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
+            </a>
+          </section>
+        </section>
+        <section data-state="alert">
+          <h1>Composer for Drupal</h1>
+        </section>
+        <section>
+          <h2>Drush Composer</h2>
+          <p>Allows running Composer commands through <a href="http://drupal.org/project/drush">Drush</a></p>
+          <pre><code>
+$ drush dl composer-8.x
+$ drush composer
+          </code></pre>
+          <small><a href="http://drupal.org/project/composer">drupal.org/project/composer</a></small>
+        </section>
+        <section>
+          <h2>Composer Autoload</h2>
+          <p>Automatically loads any generated Composer files.</p>
+          <small><a href="http://drupal.org/project/composer_autoload">drupal.org/project/composer_autoload</a></small>
+        </section>
+        <section>
+          <h2>Composer Manager</h2>
+          <p>Builds Composer files from module <code>composer.json</code> files.</p>
+          <small><a href="http://drupal.org/project/composer_manager">drupal.org/project/composer_manager</a></small>
+        </section>
+        <section>
+          <h2>Pants Module</h2>
+          <p>Add REST API for putting on/taking off pants</p>
+          <small><a href="http://drupal.org/project/pants">drupal.org/project/pants</a></small>
+        </section>
+        <section data-state="soothe">
+          <h1>Thank You</h1>
+          <p>Now take off your pants</p>
+          <small><a href="http://getcomposer.org">getcomposer.org</a></small>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="components/require.js" data-main="drupalcon2013"></script>
+</body>
+</html>

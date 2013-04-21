@@ -1,0 +1,17 @@
+{
+    "require": {
+        "components/revealjs": "*"
+    },
+    "extra": {
+        "component": {
+            "name": "drupalcon2013",
+            "scripts": [
+                "assets/drupalcon2013.js"
+            ],
+            "styles": [
+                "vendor/components/revealjs/css/theme/default.css",
+                "assets/highlightjs-theme.css"
+            ]
+        }
+    }
+}
