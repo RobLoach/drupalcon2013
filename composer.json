@@ -1,6 +1,7 @@
 {
     "require": {
-        "components/revealjs": "*"
+        "components/revealjs": "*",
+        "components/highlightjs": "*"
     },
     "extra": {
         "component": {
@@ -11,6 +12,9 @@
             "styles": [
                 "vendor/components/revealjs/css/theme/default.css",
                 "assets/highlightjs-theme.css"
+            ],
+            "files": [
+                "assets/*"
             ]
         }
     }

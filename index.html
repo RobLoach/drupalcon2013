@@ -8,30 +8,45 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-state="soothe">
+        <section>
           <h1>Composer</h1>
           <h3>There's a Module (or Library) for that!</h3>
+          <a href="#" class="image">
+              <img width="300" height="356" src="assets/composer.png" alt="Composer" style="border: none; background: none;">
+            </a>
           <p>
             <small>Presented by <a href="http://robloach.net">Rob Loach</a>, <a href="http://www.garfieldtech.com/">Larry Garfield</a> and <a href="http://twitter.com/sdboyer">Sam Boyer</a></small>
           </p>
         </section>
         <section>
-          <h2>Package Management</h2>
-          <ul>
-            <li>Double U, Tee, Eff?</li>
-          </ul>
+          <section data-state="soothe">
+            <h2>What is Composer?</h2>
+            <p><strong>Composer</strong> is a tool for <em>dependency management</em> in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.</p>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>Uhh, what?</h2>
+            <ul>
+              <li class="fragment">No more Copy/Paste of libraries</li>
+              <li class="fragment">Resolves dependencies</li>
+              <li class="fragment">Each project defines its own requirements</li>
+              <li class="fragment">Performs build tasks</li>
+            </ul>
+          </section>
         </section>
         <section>
-          <h2>Composer</h2>
+          <h2>History</h2>
           <ul>
-            <li>Some history</li>
+            <li class="fragment">Some history</li>
+            <li class="fragment">Some other stuff</li>
+            <li class="fragment">YUP!</li>
           </ul>
         </section>
         <section>
           <h2>Ideologies</h2>
-          <ul>
-            <li>Some history</li>
-          </ul>
+          <img src="assets/engage.gif" width="288" height="216" alt="Engage">
         </section>
         <section>
           <h2>Central Repository</h2>
@@ -40,17 +55,16 @@
           </ul>
         </section>
         <section>
-          <h2>Basics</h2>
-          <ul>
-            <li>composer.json</li>
-            <li>composer.lock</li>
-            <li>composer install</li>
-            <li>composer update</li>
-          </ul>
-        </section>
-        <section class="json">
-          <h2>Schema</h2>
-          <pre><code contenteditable>{
+          <section>
+            <h2>Can I HAZ?</h2>
+            <a href="#" class="image navigate-down enabled">
+              <img width="400" height="424" src="assets/yes.jpg" alt="Yes">
+            </a>
+          </section>
+          <section>
+            <h2>composer.json</h3>
+            <p>Base manifest file for your project.</p>
+            <pre><code class="json" contenteditable>{
     "name": "dries/mypackage",
     "description": "This package provides some awesomeness.",
     "license": "MIT",
@@ -64,7 +78,46 @@
         }
     }
 }</code></pre>
-          <a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section class="json">
+            <h2>Schema</h2>
+
+            <p><a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a></p>
+            <a href="#" class="image navigate-next">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
+            </a>
+          </section>
+          <section>
+            <h2>composer install</h3>
+            <p>Installs all dependencies for your project</p><pre><code class="no-highlight" contenteditable>
+$ curl -sS https://getcomposer.org/installer | php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: composer.phar
+Use it: php composer.phar
+$ php composer.phar install
+
+</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>composer update</h3>
+            <p>Updates all installed dependencies to the latest version</p><pre><code class="no-highlight" contenteditable>
+$ php composer.phar update
+Loading composer repositories with package information
+Updating dependencies
+
+</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
         </section>
         <section>
           <section data-state="soothe">
@@ -77,37 +130,51 @@
             </a>
           </section>
           <section>
+            <img src="assets/symfony.png" width="240" height="60" alt="PHPUnit" style="background: none; border: none; position: absolute; top:0; right:0;">
             <h2>Symfony</h2>
+            <p>PHP framework for web applications</p>
+            <p><a href="http://symfony.com">http://symfony.com</a></p>
             <a href="#" class="image navigate-down">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
-          <section>
+          <section><img src="assets/phpunit.png" width="195" height="135" alt="PHPUnit" style="background: none; border: none; position: absolute; top:0; left:0; z-index:-1000;">
             <h2>PHPUnit</h2>
+            <p>Unit testing software framework for PHP</p>
+            <p><a href="http://phpunit.de">http://phpunit.de</a></p>
             <a href="#" class="image navigate-down">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
-          <section>
+          <section><img src="assets/guzzle.png" width="175" height="221" alt="Guzzle" style="background: none; border: none; position: absolute; bottom:0; right:0; z-index:-1000;">
             <h2>Guzzle</h2>
+            <p>HTTP client &amp; framework for building RESTful web service clients</p>
+            <p><a href="http://guzzlephp.org/">http://guzzlephp.org</a></p>
             <a href="#" class="image navigate-down">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
           <section>
+            <img src="assets/solarium.gif" width="299" height="49" alt="Solarium" style="background: none; border: none; position: absolute; bottom:0; left:0; z-index:-1000;">
             <h2>Solarium</h2>
+            <p>Solr client library for PHP</p>
+            <p><a href="http://www.solarium-project.org/">http://solarium-project.org</a></p>
             <a href="#" class="image navigate-down">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
           <section>
             <h2>Elastica</h2>
+            <p>Elasticsearch search engine/database for PHP</p>
+            <p><a href="http://elastica.io/">http://elastica.io</a></p>
             <a href="#" class="image navigate-down">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
           <section>
             <h2>Monolog</h2>
+            <p>Log to files, sockets, inboxes, databases and various web services</p>
+            <p><a href="https://github.com/Seldaek/monolog">https://github.com/seldaek/monolog</a></p>
             <a href="#" class="image navigate-next">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
             </a>
