@@ -13,7 +13,7 @@
           <h3>There's a Module (or Library) for that!</h3>
           <a href="#" class="image">
               <img width="300" height="356" src="assets/composer.png" alt="Composer" style="border: none; background: none;">
-            </a>
+          </a>
           <p>
             <small>Presented by <a href="http://robloach.net">Rob Loach</a>, <a href="http://www.garfieldtech.com/">Larry Garfield</a> and <a href="http://twitter.com/sdboyer">Sam Boyer</a></small>
           </p>
@@ -33,90 +33,72 @@
               <li class="fragment">Resolves dependencies</li>
               <li class="fragment">Each project defines its own requirements</li>
               <li class="fragment">Performs build tasks</li>
+              <li class="fragment">Like module <code>.info</code> files, but for any library</li>
             </ul>
           </section>
         </section>
         <section>
-          <h2>History</h2>
-          <ul>
-            <li class="fragment">Some history</li>
-            <li class="fragment">Some other stuff</li>
-            <li class="fragment">YUP!</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Ideologies</h2>
-          <img src="assets/engage.gif" width="288" height="216" alt="Engage">
-        </section>
-        <section>
-          <h2>Central Repository</h2>
-          <ul>
-            <li><a href="http://packagist.org">Packagist.org</a></li>
-          </ul>
-        </section>
-        <section>
           <section>
-            <h2>Can I HAZ?</h2>
-            <a href="#" class="image navigate-down enabled">
-              <img width="400" height="424" src="assets/yes.jpg" alt="Yes">
-            </a>
+            <h1>History</h1>
           </section>
           <section>
-            <h2>composer.json</h3>
-            <p>Base manifest file for your project.</p>
-            <pre><code class="json" contenteditable>{
-    "name": "dries/mypackage",
-    "description": "This package provides some awesomeness.",
-    "license": "MIT",
-    "require": {
-        "php": ">=5.3.2",
-        "symfony/symfony": "2.0.*"
-    },
-    "autoload": {
-        "psr-0": {
-            "MyName\\MyPackage": "src/"
-        }
-    }
-}</code></pre>
-            <a href="#" class="image navigate-down enabled">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
-          </section>
-          <section class="json">
-            <h2>Schema</h2>
-
-            <p><a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a></p>
-            <a href="#" class="image navigate-next">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-            </a>
+            <h2>PEAR</h2>
+            <img src="assets/pear.gif" alt="PEAR" style="background: none; border: none; position: absolute; bottom:0; right:0; z-index:-1000;">
+            <ul>
+              <li class="fragment">PHP Extension and Application Repository</li>
+              <li class="fragment">Founded 2000 on the "new" PHP 4</li>
+              <li class="fragment">Required root to use properly (WTF?)</li>
+              <li class="fragment">Complex process for adding packages</li>
+              <li class="fragment">Easy to get wrong</li>
+            </ul>
           </section>
           <section>
-            <h2>composer install</h3>
-            <p>Installs all dependencies for your project</p><pre><code class="no-highlight" contenteditable>
-$ curl -sS https://getcomposer.org/installer | php
-All settings correct for using Composer
-Downloading...
-
-Composer successfully installed to: composer.phar
-Use it: php composer.phar
-$ php composer.phar install
-
-</code></pre>
-            <a href="#" class="image navigate-down enabled">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
+            <h2>Symfony 2.0 &amp; PHPBB</h2>
+            <ul>
+              <li class="fragment">Initial public announcement, Symfony Live Paris, February 2010</li>
+              <li class="fragment">PHPBB: We're rebuilding on it!</li>
+              <li class="fragment">Symfony2 uses 3rd party libs (Doctrine, Monolog)</li>
+            </ul>
           </section>
           <section>
-            <h2>composer update</h3>
-            <p>Updates all installed dependencies to the latest version</p><pre><code class="no-highlight" contenteditable>
-$ php composer.phar update
-Loading composer repositories with package information
-Updating dependencies
-
-</code></pre>
-            <a href="#" class="image navigate-down enabled">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
+            <h2>Dependency Hell</h2>
+            <!-- screenshot of dependency hell. Maybe a module with 30 dependencies? I've had those... -->
+          </section>
+          <section>
+            <h2>We need a dependency system!</h2>
+            <q>It's dumb to make it Symfony specific</q>
+            <p>&mdash;Jordi Boggiano</p>
+          </section>
+          <section>
+            <h2>April 2011</h2>
+            <p>Nils Aderman (PHPBB): libzypp -> PHP</p>
+            <p>Jordi Boggiano (Monolog): Packagist, less sucky front-end for PEAR</p>
+          </section>
+          <section>
+            <h2>With their powers combined...</h2>
+            <p>Composer</p>
+          </section>
+          <section>
+            <h2>September 2011</h2>
+            <p><a href="http://packagist.org/">Packagist.org</a></p>
+            <ol>
+              <li class="fragment"><a href="https://packagist.org/packages/monolog/monolog">Monolog</a></li>
+              <li class="fragment"><a href="https://packagist.org/packages/twig/twig">Twig</a></li>
+              <li class="fragment"><a href="https://packagist.org/packages/pirum/pirum">Pirum</a></li>
+              <li class="fragment"><a href="https://packagist.org/packages/swiftmailer/swiftmailer">Swiftmailer</a></li>
+              <li class="fragment"><a href="https://packagist.org/packages/pimple/pimple">Pimple</a></li>
+              <li class="fragment"><a href="https://packagist.org/packages/symfony/symfony">Symfony</a></li>
+            </ol>
+          </section>
+          <section>
+            <blockquote>I'd say until early 2012 it was pretty unusable, yet people used it. I guess that's how badly it was needed.</blockquote>
+            <p>&mdash; Jordi Boggiano</p>
+          </section>
+          <section>
+            <h2>Package count</h2>
+            <img src="assets/packagist-usage.png" alt="Number of packages on Packagist over time" />
+            <p>April 2013: 10,000 packages</p>
+            <p>(Not just Symfony!)</p>
           </section>
         </section>
         <section>
@@ -177,6 +159,75 @@ Updating dependencies
             <p><a href="https://github.com/Seldaek/monolog">https://github.com/seldaek/monolog</a></p>
             <a href="#" class="image navigate-next">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
+            </a>
+          </section>
+        </section>
+        <section>
+          <h2>Ideologies</h2>
+          <img src="assets/engage.gif" width="288" height="216" alt="Engage">
+        </section>
+        <section>
+          <section>
+            <h2>I Can HAZ?</h2>
+            <a href="#" class="image navigate-down enabled">
+              <img width="400" height="424" src="assets/yes.jpg" alt="Yes">
+            </a>
+          </section>
+          <section>
+            <h2>composer.json</h3>
+            <p>Base manifest file for your project.</p>
+            <pre><code class="json" contenteditable>{
+    "name": "dries/mypackage",
+    "description": "This package provides some awesomeness.",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/symfony": "2.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MyName\\MyPackage": "src/"
+        }
+    }
+}</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section class="json">
+            <h2>Schema</h2>
+
+            <p><a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a></p>
+            <a href="#" class="image navigate-next">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
+            </a>
+          </section>
+          <section>
+            <h2>composer install</h3>
+            <p>Installs all dependencies for your project</p><pre><code class="no-highlight" contenteditable>
+$ curl -sS https://getcomposer.org/installer | php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: composer.phar
+Use it: php composer.phar
+$ php composer.phar install
+
+</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>composer update</h3>
+            <p>Updates all installed dependencies to the latest version</p><pre><code class="no-highlight" contenteditable>
+$ php composer.phar update
+Loading composer repositories with package information
+Updating dependencies
+
+</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
         </section>
