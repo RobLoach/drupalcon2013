@@ -183,15 +183,14 @@
             </a>
           </section>
           <section>
-            <h2>composer.json</h3>
-            <p>Base manifest file for your project.</p>
+            <h2>composer.json</h2>
+            <p>Base manifest file for your project</p>
             <pre><code class="json" contenteditable>{
     "name": "dries/mypackage",
     "description": "This package provides some awesomeness.",
     "license": "MIT",
     "require": {
-        "php": ">=5.3.2",
-        "symfony/symfony": "2.0.*"
+        "guzzle/guzzle": "3.4.*"
     },
     "autoload": {
         "psr-0": {
@@ -203,16 +202,8 @@
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
             </a>
           </section>
-          <section class="json">
-            <h2>Schema</h2>
-
-            <p><a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a></p>
-            <a href="#" class="image navigate-next">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-            </a>
-          </section>
           <section>
-            <h2>composer install</h3>
+            <h2>composer install</h2>
             <p>Installs all dependencies for your project</p><pre><code class="no-highlight" contenteditable>
 $ curl -sS https://getcomposer.org/installer | php
 All settings correct for using Composer
@@ -228,15 +219,62 @@ $ php composer.phar install
             </a>
           </section>
           <section>
+            <h2>File system</h2>
+            <pre><code class="no-highlight" contenteditable>
+-rw-rw-r-- composer.json (your composer file)
+-rw-rw-r-- composer.lock (generated)
+drwxrwxr-x src/          (your code)
+drwxrwxr-x vendor/       (everyone else's code)
+</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
+            <h2>index.php</h2>
+            <pre><code class="php" contenteditable>
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Every class is now yours to command!
+
+// Autoload on demand! Your work: zero.
+$client = new Guzzle\Http\Client('https://api.github.com');
+$request = $client->get('/user')->setAuth('user', 'pass');
+$response = $request->send();
+echo $response->getBody();
+</code></pre>
+            <a href="#" class="image navigate-down enabled">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section>
             <h2>composer update</h3>
             <p>Updates all installed dependencies to the latest version</p><pre><code class="no-highlight" contenteditable>
 $ php composer.phar update
 Loading composer repositories with package information
 Updating dependencies
-
 </code></pre>
             <a href="#" class="image navigate-down enabled">
               <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section class="json">
+            <h2>More Schema Options</h2>
+            <p><a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a></p>
+                        <pre><code class="json" contenteditable>{
+    "require": {
+        "php": ">=5.3.10",
+        "guzzle/guzzle": "3.4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "suggest": {
+        "monolog/monolog": "Advanced logging package"
+    }
+}</code></pre>
+            <a href="#" class="image navigate-next">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
             </a>
           </section>
         </section>
