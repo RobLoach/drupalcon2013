@@ -10,7 +10,7 @@
                 "assets/drupalcon2013.js"
             ],
             "styles": [
-                "vendor/components/revealjs/css/theme/default.css",
+                "components/revealjs/css/theme/default.css",
                 "assets/highlightjs-theme.css"
             ],
             "files": [
