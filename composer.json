@@ -7,14 +7,21 @@
         "component": {
             "name": "drupalcon2013",
             "scripts": [
-                "assets/drupalcon2013.js"
+                "assets/drupalcon2013.js",
+                "assets/reveal.js-fullscreen-img/fullscreen-img.js"
             ],
             "styles": [
                 "components/revealjs/css/theme/default.css",
-                "assets/highlightjs-theme.css"
+                "assets/highlightjs-theme.css",
+                "assets/reveal.js-fullscreen-img/fullscreen-img.css",
+                "assets/style.css"
             ],
+            "shim": {
+                "deps": ["revealjs", "highlightjs"]
+            },
             "files": [
-                "assets/*"
+                "assets/*",
+                "components/revealjs/lib/font/**"
             ]
         }
     }
