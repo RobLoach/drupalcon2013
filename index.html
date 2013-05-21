@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <title>Composer: There's a Module (or Library) for That</title>
     <link rel="stylesheet" href="components/require.css">
+    <link rel="stylesheet" href="components/revealjs/css/theme/default.css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section data-state="blackout">
           <h1>Composer</h1>
           <h3>There's a Module (or Library) for that!</h3>
           <a href="#" class="image">
-              <img width="300" height="356" src="assets/composer.png" alt="Composer" style="border: none; background: none;">
+              <img width="300" height="356" src="assets/composer.png" alt="Composer" style="border: none; background: white;">
           </a>
           <p>
-            <small>Presented by <a href="http://robloach.net">Rob Loach</a>, <a href="http://www.garfieldtech.com/">Larry Garfield</a> and <a href="http://twitter.com/sdboyer">Sam Boyer</a></small>
+            <small>Presented by <a href="http://robloach.net">Rob Loach</a> and <a href="http://www.garfieldtech.com/">Larry Garfield</a></small>
           </p>
         </section>
         <section>
@@ -135,87 +136,56 @@
           </section>
         </section>
         <section>
-          <section data-state="soothe">
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
             <h1>Libraries</h1>
             <p>
               Some of the libraries available via Composer include...
             </p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section>
-            <img src="assets/symfony.png" width="240" height="60" alt="PHPUnit" style="background: none; border: none; position: absolute; top:0; right:0;">
-            <h2>Symfony</h2>
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
+            <h2>
+            <img src="assets/symfony.png" style="vertical-align:middle; border: none; background:none; width: 120px;">Symfony</h2>
             <p>PHP framework for web applications</p>
             <p><a href="http://symfony.com">http://symfony.com</a></p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section>
-            <img src="assets/zend-framework.png" width="60" height="60" alt="PHPUnit" style="background: none; border: none; position: absolute; top:0; right:0;">
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
             <h2>Zend Framework</h2>
+            <img src="assets/zend-framework.png" alt="Zend" style="background: none; border:none;">
             <p>PHP framework for web applications</p>
             <p><a href="http://framework.zend.com">http://framework.zend.com</a></p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section><img src="assets/phpunit.png" width="195" height="135" alt="PHPUnit" style="background: none; border: none; position: absolute; top:0; left:0; z-index:-1000;">
-            <h2>PHPUnit</h2>
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
+            <h2><img src="assets/phpunit.png" width="195" height="135" alt="PHPUnit" style="background:none; border: none; vertical-align: middle;"> PHPUnit</h2>
             <p>Unit testing software framework for PHP</p>
             <p><a href="http://phpunit.de">http://phpunit.de</a></p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section><img src="assets/guzzle.png" width="175" height="221" alt="Guzzle" style="background: none; border: none; position: absolute; bottom:0; right:0; z-index:-1000;">
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen"><img src="assets/guzzle.png" width="175" height="221" alt="Guzzle" style="background: none; border: none; position: absolute; bottom:0; right:0; z-index:-1000;">
             <h2>Guzzle</h2>
             <p>HTTP client &amp; framework for building RESTful web service clients</p>
             <p><a href="http://guzzlephp.org/">http://guzzlephp.org</a></p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section>
-            <img src="assets/solarium.gif" width="299" height="49" alt="Solarium" style="background: none; border: none; position: absolute; bottom:0; left:0; z-index:-1000;">
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
             <h2>Solarium</h2>
+            <img src="assets/solarium.gif" width="299" height="49" alt="Solarium" style="background: none; border:none;">            
             <p>Solr client library for PHP</p>
             <p><a href="http://www.solarium-project.org/">http://solarium-project.org</a></p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section>
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
             <h2>Elastica</h2>
             <p>Elasticsearch search engine/database for PHP</p>
             <p><a href="http://elastica.io/">http://elastica.io</a></p>
-            <a href="#" class="image navigate-down">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
           </section>
-          <section>
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
             <h2>Monolog</h2>
             <p>Log to files, sockets, inboxes, databases and various web services</p>
             <p><a href="https://github.com/Seldaek/monolog">https://github.com/seldaek/monolog</a></p>
-            <a href="#" class="image navigate-next">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-            </a>
           </section>
         </section>
         <section>
-          <h2>Ideologies</h2>
-          <img src="assets/engage.gif" width="288" height="216" alt="Engage">
-        </section>
-        <section>
-          <section>
-            <h2>I Can HAZ?</h2>
-            <a href="#" class="image navigate-down enabled">
-              <img width="400" height="424" src="assets/yes.jpg" alt="Yes">
-            </a> 
+          <section fullscreen-img="assets/yes.jpg" class="fullscreen">
+            <h2>Let's Do This</h2>
           </section>
-          <section>
+          <section fullscreen-img="assets/yes.jpg" class="fullscreen">
             <h2>composer.json</h2>
             <p>Base manifest file for your project</p>
             <pre><code class="json" contenteditable>{
@@ -231,7 +201,7 @@
     }
 }</code></pre>
           </section>
-          <section>
+          <section fullscreen-img="assets/yes.jpg" class="fullscreen">
             <h2>composer install</h2>
             <p>Installs all dependencies for your project</p><pre><code class="no-highlight" contenteditable>
 $ curl -sS https://getcomposer.org/installer | php
@@ -244,7 +214,7 @@ $ php composer.phar install
 
 </code></pre>
           </section>
-          <section>
+          <section fullscreen-img="assets/yes.jpg" class="fullscreen">
             <h2>File system</h2>
             <pre><code class="no-highlight" contenteditable>
 -rw-rw-r-- composer.json (your composer file)
@@ -253,7 +223,7 @@ drwxrwxr-x src/          (your code)
 drwxrwxr-x vendor/       (everyone else's code)
 </code></pre>
           </section>
-          <section>
+          <section fullscreen-img="assets/yes.jpg" class="fullscreen">
             <h2>index.php</h2>
             <pre><code class="php" contenteditable>
 require_once __DIR__ . '/vendor/autoload.php';
@@ -267,7 +237,7 @@ $response = $request->send();
 echo $response->getBody();
 </code></pre>
           </section>
-          <section>
+          <section fullscreen-img="assets/yes.jpg" class="fullscreen">
             <h2>composer update</h3>
             <p>Updates all installed dependencies to the latest version</p><pre><code class="no-highlight" contenteditable>
 $ php composer.phar update
@@ -275,7 +245,7 @@ Loading composer repositories with package information
 Updating dependencies
 </code></pre>
           </section>
-          <section class="json">
+          <section class="json fullscreen" fullscreen-img="assets/yes.jpg">
             <h2>More Schema Options</h2>
             <p><a href="http://getcomposer.org/doc/04-schema.md">Schema Documentation</a></p>
                         <pre><code class="json" contenteditable>{
@@ -293,33 +263,83 @@ Updating dependencies
 }</code></pre>
           </section>
         </section>
-        <section data-state="soothe">
-          <h1>Composer for Drupal</h1>
-        </section>
         <section>
-          <h2>Drush Composer</h2>
-          <p>Allows running Composer commands through <a href="http://drupal.org/project/drush">Drush</a></p>
-          <pre><code>
-$ drush dl composer-8.x
-$ drush composer
-          </code></pre>
-          <small><a href="http://drupal.org/project/composer">drupal.org/project/composer</a></small>
-        </section>
-        <section>
-          <h2>Composer Autoload</h2>
-          <p>Automatically loads any generated Composer files.</p>
-          <small><a href="http://drupal.org/project/composer_autoload">drupal.org/project/composer_autoload</a></small>
-        </section>
-        <section>
-          <h2>Composer Manager</h2>
-          <p>Builds Composer files from module <code>composer.json</code> files.</p>
-          <small><a href="http://drupal.org/project/composer_manager">drupal.org/project/composer_manager</a></small>
-        </section>
-        <section>
-          <h2>Pants Module</h2>
-          <p>Add REST API for putting on/taking off pants</p>
-          <small><a href="http://drupal.org/project/pants">drupal.org/project/pants</a></small>
-?&gt;</code></pre>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
+            <h1>Composer for Drupal</h1>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
+            <h2>Drush Composer</h2>
+            <p>Allows running Composer commands through <a href="http://drupal.org/project/drush">Drush</a></p>
+            <pre><code>
+  $ drush dl composer-8.x
+  $ drush composer
+            </code></pre>
+            <small><a href="http://drupal.org/project/composer">drupal.org/project/composer</a></small>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
+            <h2>Composer Autoload</h2>
+            <p>Automatically loads any generated Composer files</p>
+            <a href="http://drupal.org/project/composer_autoload"><img src="assets/composerautoload.jpg"></a>
+            <small><a href="http://drupal.org/user/214218">Jimmy Berry</a> - <a href="http://drupal.org/project/composer_autoload">drupal.org/project/composer_autoload</a></small>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
+            <h2>Composer Manager</h2>
+            <p>Builds Composer files from module <code>composer.json</code> files</p>
+            <p><img src="assets/composermanager.png" width="50%"></p>
+            <small><a href="https://drupal.org/user/266779">Chris Pliakas</a> - <a href="http://drupal.org/project/composer_manager">drupal.org/project/composer_manager</a></small>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
+            <h2>Drush Composer Manager</h2>
+            <p>Downloads and installs dependencies for Drupal modules</p>
+            <pre><code> $ drush dl composer_manager monolog
+ $ drush en composer_manager monolog
+ $ drush composer-manager
+ Loading composer repositories with package information
+ Installing dependencies
+   - Installing psr/log (1.0.0)
+     Downloading: 100%         
+
+   - Installing monolog/monolog (1.5.0)
+     Downloading: 100%         
+</code></pre>
+            <small><a href="http://drupal.org/project/composer_manager">drupal.org/project/composer_manager</a></small>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
+            <h2>Composer Installers</h2>
+            <p>Facilitates installation of Drupal modules/themes/profiles</p>
+            <p><img src="assets/composerinstallers.jpg"></p>
+            <small><a href="http://composer.github.io/installers/">github.com/composer/installers</a></small>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="json fullscreen">
+            <h2>Composer Installers</h2>
+            <p>Add a <em>composer.json</em> file in your module/theme directory</p>
+            <pre><code>{
+  "name": "dries/mymodule",
+  "type": "drupal-module",
+  "require": {
+    "composer/installers": "*"
+  }
+}</code></pre>
+            <small><a href="http://composer.github.io/installers/">github.com/composer/installers</a></small>
+            <p><small class="fragment">Adding these to each module is cumbersome though, so there is...</small></p>
+          </section>
+          <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen json">
+            <h2>Drupal Packagist</h2>
+            <p>Indexes Drupal themes/modules/profiles for installation</p>
+            <pre><code>{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://drugist.espend.de"
+    }       
+  ],
+  "require": {
+    "drupal/views": "*"
+  }
+}</code></pre>
+            <p><small><a href="https://drupal.org/user/250551">Haehnchen</a> - <a href="http://github.com/Haehnchen/drupal-packagist">github.com/haehnchen/drupal-packagist</a></small></p>
+            <p class="fragment">Still very early</p>
+          </section>
         </section>
         <section fullscreen-img="assets/barcelona.jpg" class="fullscreen">
           <h1>Sprint: Friday</h1>

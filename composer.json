@@ -11,7 +11,6 @@
                 "assets/reveal.js-fullscreen-img/fullscreen-img.js"
             ],
             "styles": [
-                "components/revealjs/css/theme/default.css",
                 "assets/highlightjs-theme.css",
                 "assets/reveal.js-fullscreen-img/fullscreen-img.css",
                 "assets/style.css"
