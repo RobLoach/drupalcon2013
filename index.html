@@ -60,10 +60,10 @@
           </section>
         </section>
         <section>
-          <section data-state="soothe">
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h1>A little history</h1>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>PEAR</h2>
             <img src="assets/pear.gif" alt="PEAR" style="background: none; border: none; position: absolute; bottom:0; right:0; z-index:-1000;">
             <ul>
@@ -74,7 +74,7 @@
               <li class="fragment">Easy to get wrong</li>
             </ul>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>Symfony 2.0 &amp; PHPBB</h2>
             <ul>
               <li class="fragment">Initial alpha, Symfony Live Paris, February 2010</li>
@@ -82,27 +82,27 @@
               <li class="fragment">Symfony2 uses 3rd party libs (Doctrine, Monolog)</li>
             </ul>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>Dependency Hell</h2>
             <!-- screenshot of dependency hell. Maybe a module with 30 dependencies? I've had those... -->
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>We need a dependency system!</h2>
             <div class="fragment">
               <q>It's dumb to make it Symfony specific</q>
               <p>&mdash;Jordi Boggiano</p>
             </div>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>April 2011</h2>
             <p>Nils Aderman (PHPBB): libzypp -> PHP</p>
             <p>Jordi Boggiano (Monolog): Packagist, less sucky front-end for PEAR</p>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>With their powers combined...</h2>
             <p><strong>Composer</strong> is a tool for <em>dependency management</em> in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.</p>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>Uhh, what?</h2>
             <ul>
               <li class="fragment">No more Copy/Paste of libraries</li>
@@ -112,7 +112,7 @@
               <li class="fragment">Like module <code>.info</code> files, but for any library</li>
             </ul>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>September 2011</h2>
             <p><a href="http://packagist.org/">Packagist.org</a></p>
             <ol>
@@ -124,11 +124,11 @@
               <li class="fragment"><a href="https://packagist.org/packages/symfony/symfony">Symfony</a></li>
             </ol>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <blockquote>I'd say until early 2012 it was pretty unusable, yet people used it. I guess that's how badly it was needed.</blockquote>
             <p>&mdash; Jordi Boggiano</p>
           </section>
-          <section>
+          <section fullscreen-img="assets/history.jpg" class="fullscreen">
             <h2>Package count</h2>
             <img src="assets/packagist-usage.png" alt="Number of packages on Packagist over time" />
             <p>April 2013: 10,000 packages</p>
@@ -179,6 +179,14 @@
             <h2>Monolog</h2>
             <p>Log to files, sockets, inboxes, databases and various web services</p>
             <p><a href="https://github.com/Seldaek/monolog">https://github.com/seldaek/monolog</a></p>
+          </section>
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
+            <h2>Assetic</h2>
+            <p>JavaScript, stylesheet, and image asset management</p>
+            <p><a href="https://github.com/kriswallsmith/assetic">http://github.com/kriswallsmith/assetic</a></p>
+          </section>
+          <section fullscreen-img="assets/libraries.jpg" class="fullscreen">
+            <p><img src="assets/drupal.png" style="background:none;border:none;" alt="Drupal" title="Drupal" width="200px"></p>
           </section>
         </section>
         <section>
@@ -262,6 +270,24 @@ Updating dependencies
     }
 }</code></pre>
           </section>
+          <section class="fullscreen" fullscreen-img="assets/yes.jpg">
+            <h2>Private Repositories</h2>
+            <p><em>Satis</em> allows you to host your own Composer repositories</p>
+                        <pre><code class="json" contenteditable>{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.example.org/"
+    }
+  ],
+  "require": {
+    "company/package": "1.2.0",
+    "company/package2": "1.5.2",
+    "company/package3": "dev-master"
+  }
+}</code></pre>
+            <p><a href="http://getcomposer.org/doc/articles/handling-private-packages-with-satis.md">github.com/composer/satis</a></p>
+          </section>
         </section>
         <section>
           <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen">
@@ -325,7 +351,7 @@ Updating dependencies
           </section>
           <section fullscreen-img="assets/drupalbackground.jpg" class="fullscreen json">
             <h2>Drupal Packagist</h2>
-            <p>Indexes Drupal themes/modules/profiles for installation</p>
+            <p>Indexes Drupal themes/modules for installation using Satis</p>
             <pre><code>{
   "repositories": [
     {
@@ -348,13 +374,9 @@ Updating dependencies
 <small>Follow <a href="http://twitter.com/drupalmentoring">@drupalmentoring</a></small>
         </section>
         <section>
-          <h1>Thank You</h1>
-          <p>Now take off your pants</p>
-          <small><a href="http://getcomposer.org">getcomposer.org</a></small>
-        </section>
-        <section data-state="soothe">
-          <h1>Rate</h1>
-          <p>Rate this session and stuff.</p>
+          <img src="assets/drupalconportlandlogo.png" style="background:none;border:none;box-shadow:none;" height="250px"><img src="assets/drupalconportland.png" style="background:none;border:none;box-shadow:none;" height="250px">
+          <h1>Thank you</h1>
+          <p>Evaluate this session at:<br /><a href="http:portland2013.drupal.org/schedule">portland2013.drupal.org/schedule</a></p>
         </section>
       </div>
     </div>
