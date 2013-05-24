@@ -2021,15 +2021,15 @@ var components = {
     "packages": [
         {
             "name": "highlightjs",
-            "main": "highlightjs-build.js"
+            "main": "highlightjs-built.js"
         },
         {
             "name": "revealjs",
-            "main": "revealjs-build.js"
+            "main": "revealjs-built.js"
         },
         {
             "name": "drupalcon2013",
-            "main": "drupalcon2013-build.js"
+            "main": "drupalcon2013-built.js"
         }
     ],
     "shim": {
@@ -2038,6 +2038,12 @@ var components = {
         },
         "revealjs": {
             "exports": "Reveal"
+        },
+        "drupalcon2013": {
+            "deps": [
+                "revealjs",
+                "highlightjs"
+            ]
         }
     },
     "baseUrl": "components"
